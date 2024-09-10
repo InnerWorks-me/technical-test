@@ -1,4 +1,4 @@
-Problem: Simplified SDK Version Manager System
+Problem: SDK Version Manager System
 
 The company needs a system to manage different versions of their SDKs for iOS, Android, and Web platforms. The system should allow for easy retrieval of SDK information and support the addition of new versions.
 
