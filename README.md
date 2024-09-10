@@ -10,7 +10,7 @@ There are two bonus questions at the end of section 1, please only attempt them 
 
 Section 1 will simply be judging the way you tackle the problem, do not worry about complexity (until you get to the bonus questions, or unless specified as in question 3) and do not worry about code comments etc.
 
-Section 2 will judge the way you approach a problem, the quality of your code (including comments) and the application of good programming practise.
+Section 2 will judge the way you approach a problem, the quality of your code (including comments) and the application of good programming practise. Please add your solutions into the folders marked "Solution".
 
 We know that you can use AI tools, and look up solutions online (at least for section 1). Please refrain from plugging the whole question into an AI tool and getting the answers, we will be regularly checking the git pod, it will be noticable in your code, and it will harm your application. You can however use AI tools for code references, the sort of thing you might look up in docs e.g. "how do I split a string into an array of characters in Python" stuff like that. Remember that should you proceed to the next stage of interview, you will be asked to talk through your solutions to these problems, so make sure you understand what you are doing!
 
