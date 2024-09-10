@@ -17,7 +17,7 @@ Your task is to design and implement the core classes for this Simplified SDK Ve
 2. Encapsulation of SDK-specific logic
 3. A flexible design that allows for easy addition of new SDK versions
 
-Provide a high-level design and implement key classes. You can use your preferred programming language.
+You can use your preferred programming language.
 
 Here's a starting point to consider:
 
