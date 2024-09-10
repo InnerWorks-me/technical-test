@@ -1,0 +1,59 @@
+Problem: Simplified SDK Version Manager System
+
+The company needs a system to manage different versions of their SDKs for iOS, Android, and Web platforms. The system should allow for easy retrieval of SDK information and support the addition of new versions.
+
+Requirements:
+
+1. The system should support three SDK types: iOS, Android, and Web.
+2. Each SDK type can have multiple versions.
+3. For each SDK version, store and retrieve the following information:
+   - Version number
+   - Release date
+   - List of features supported
+
+Your task is to design and implement the core classes for this Simplified SDK Version Manager System. Your solution should demonstrate:
+
+1. Proper use of inheritance and/or interfaces and or types (depending on the chosen language)
+2. Encapsulation of SDK-specific logic
+3. A flexible design that allows for easy addition of new SDK versions
+
+Provide a high-level design and implement key classes. You can use your preferred programming language.
+
+Here's a starting point to consider:
+
+```
+Interface ISDK:
+    Method GetVersion(): String
+    Method GetReleaseDate(): Date
+    Method GetSupportedFeatures(): List<String>
+
+Class SDKVersion implements ISDK:
+    // Implement the interface methods
+
+Class SDKManager:
+    // Implement methods to add and retrieve SDK versions
+
+// You need to implement the classes and any other necessary components
+```
+
+Tasks:
+
+1. Complete the design and implementation of the Simplified SDK Version Manager System:
+   - Implement the SDKVersion class
+   - Create a SDKManager class that can handle multiple SDK types and versions
+   - Implement methods to add new SDK versions and retrieve SDK information
+
+2. Discuss extensibility:
+   - Explain how your design allows for easy addition of new SDK versions in the future
+   - Describe how you might extend the system to support a new SDK type (e.g., Desktop) with minimal changes to existing code
+
+3. Consider edge cases:
+   - How does your system handle requests for non-existent SDK versions?
+   - How would you implement a method to find the latest version for each SDK type?
+
+Please provide your solution, including:
+- The complete design of your Simplified SDK Version Manager System (classes and their relationships)
+- Implementation of key classes (in your preferred programming language)
+- Explanation of your design choices
+- Discussion of how your design supports future extensibility
+- Consideration of edge cases

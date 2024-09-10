@@ -1,0 +1,97 @@
+[
+  {
+    "uuid": "123e4567-e89b-12d3-a456-426614174000",
+    "type": "A",
+    "data": {
+      "priority": "high",
+      "content": "This is a type A message that should be sent immediately"
+    }
+  },
+  {
+    "uuid": "223e4567-e89b-12d3-a456-426614174001",
+    "type": "B",
+    "data": {
+      "batchId": "batch1",
+      "content": "This is a type B message that should be batched"
+    }
+  },
+  {
+    "uuid": "323e4567-e89b-12d3-a456-426614174002",
+    "type": "C",
+    "data": {
+      "timestamp": "2023-09-09T12:00:00Z",
+      "content": "This is a type C message whose UUID should be stored"
+    }
+  },
+  {
+    "uuid": "423e4567-e89b-12d3-a456-426614174003",
+    "type": "B",
+    "data": {
+      "batchId": "batch1",
+      "content": "Another type B message for batching"
+    }
+  },
+  {
+    "uuid": "523e4567-e89b-12d3-a456-426614174004",
+    "type": "A",
+    "data": {
+      "priority": "low",
+      "content": "Another type A message for immediate sending"
+    }
+  },
+  {
+    "uuid": "623e4567-e89b-12d3-a456-426614174005",
+    "type": "B",
+    "data": {
+      "batchId": "batch2",
+      "content": "Third type B message"
+    }
+  },
+  {
+    "uuid": "723e4567-e89b-12d3-a456-426614174006",
+    "type": "C",
+    "data": {
+      "timestamp": "2023-09-09T12:01:00Z",
+      "content": "Another type C message for UUID storage"
+    }
+  },
+  {
+    "uuid": "823e4567-e89b-12d3-a456-426614174007",
+    "type": "B",
+    "data": {
+      "batchId": "batch2",
+      "content": "Fourth type B message"
+    }
+  },
+  {
+    "uuid": "923e4567-e89b-12d3-a456-426614174008",
+    "type": "B",
+    "data": {
+      "batchId": "batch2",
+      "content": "Fifth type B message - this should trigger a batch send"
+    }
+  },
+  {
+    "uuid": "223e4567-e89b-12d3-a456-426614174001",
+    "type": "B",
+    "data": {
+      "batchId": "batch3",
+      "content": "Duplicate UUID for type B - this should not be added to a batch"
+    }
+  },
+  {
+    "uuid": "a23e4567-e89b-12d3-a456-426614174009",
+    "type": "D",
+    "data": {
+      "content": "This is an unknown message type to test error handling"
+    }
+  },
+  {
+    "uuid": "b23e4567-e89b-12d3-a456-426614174010",
+    "type": "A",
+    "data": {
+      "priority": "critical",
+      "content": "A high-priority type A message"
+    }
+  }
+]
