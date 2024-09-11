@@ -1,21 +1,21 @@
 Problem: JSON Message Processor System
 
-Design and implement a system that processes incoming JSON messages of different types. Each message has a UUID and a type, and the system needs to handle each type differently.
+Design and implement a system that is able to process incoming JSON messages of different types. Each message has a UUID and a type, and the system needs to handle each type differently.
 
-NOTE Please use "example.json" to see the JSON format this file needs to be able to handle.
+NOTE: Please use "example.json" to see the JSON format this system should be able to handle.
 
 Requirements:
 
 1. The system should be able to receive JSON messages, each containing at least a UUID and a type field.
 2. There are three types of messages: A, B, and C.
 3. For Type A messages:
-   - They should be sent to an API endpoint immediately upon receipt (please create a mock POST request which sends the data WITHOUT the UUID)
+   - They should be sent to an API endpoint immediately upon receipt. Please write code that would send a POST request to the endpoint 'https://my-mock-api/test-post which sends the data WITHOUT the UUID. (note that this endpoint doesn't actually exist, but we want to see the code for it).
 4. For Type B messages:
-   - They should be batched.
-   - If adding a message to the batch makes the batch size equal to 5, send the entire batch to an endpoint (You could use the same endpoint as before, with the same constraints)
+   - They should be batched locally.
+   - If adding a message to the batch makes the batch size equal to 5, send the entire batch to an endpoint (You should use the same endpoint as before, with the same constraints)
    - Only add a message to the batch if a message with the same UUID isn't already in the batch.
 5. For Type C messages:
-   - Save the UUID to an efficient storage type.
+   - Save the UUID locally, we only need to store unique UUIDs (no duplicates) pick an efficient data structure for this.
 
 Initial Pseudocode (this is just a guide, it does not need to follow this exact format):
 
@@ -73,7 +73,7 @@ Tasks:
    Implement the MessageProcessor system, ensuring it meets all the given requirements. You can use your preferred programming language. Pay special attention to:
    - Efficient message queuing and processing
    - Correct handling of Type B message batching
-   - Efficient storage for Type C message UUIDs
-   - Error handling on the API
+   - Local storage for unique Type C message UUIDs
+   - Error handling for API POST requests
    - Clear logging throughout
    - Comments
